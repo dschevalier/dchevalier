@@ -44,7 +44,7 @@ h1 {
     letter-spacing: .1725rem;
     line-height: 2.625rem;
     margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -64,6 +64,10 @@ h1 {
 .btn:hover, .btn:active {
     color: #4BA8FF;
     border: .0625rem solid #4BA8FF;
+}
+
+.break {
+    display: block;
 }
 
 
@@ -86,12 +90,12 @@ nav {
 }
 
 #site-navigation a {
-    color: #777;
+    color: #15354c;
     text-decoration: none;
     padding-bottom: .1875rem;
     border-bottom: .125rem solid transparent;
     transition: border 0.2s linear;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #site-navigation a:hover {
@@ -136,7 +140,8 @@ PROJECTS SECTION
 
 .project-link:link, .project-link:visited {
     display: inline-block;
-    margin: 2.1875em 3.125em 0 0;
+    margin: 1.1875em 3.125em 0 0;
+/*    margin: 2.1875em 3.125em 0 0;*/
     font-weight: 700;
     color: #15354c;
     text-decoration: none;
@@ -157,7 +162,8 @@ CONNECT SECTION
 
 #connect-section ul {
     padding: 3rem 0 0 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
+/*    font-size: 2.5rem;*/
     text-align: center;
 }
 
@@ -268,48 +274,14 @@ input[type=submit]:hover {
 }
 
 
-/*---------------------------------------------------------------------------
-MEDIA QUERIES
----------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 360px) {
-    html {
-        /*        font-size: 16px;*/
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .row {
-        max-width: 40.625rem;
-        padding: 0 3.125rem;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    main {
-        padding-top: 4.25rem;
-    }
-    nav {
-        margin-top: 5rem;
-    }
-    .btn:link, .btn:visited {
-        margin: 3.35rem 0;
-    }
-}
-
-@media only screen and (min-width: 1920px) {
-    html {
-        /*        font-size: 17px;*/
-    }
-}
-
 
 /*---------------------------------------------------------------------------
 CARDS
 ---------------------------------------------------------------------------*/
 
 .card {
-    padding: 2.5rem;
+    padding: 1.25rem;
+/*    padding: 2.5rem;*/
     border: .0625rem solid #f2f2f2;
     background: #FFF;
     margin-bottom: 1.875rem;
@@ -320,4 +292,48 @@ CARDS
 .card:hover {
     transform: translateY(-.625rem);
     box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
+}
+
+
+/*---------------------------------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 360px) {
+    #connect-section ul {
+    font-size: 2.5rem;
+}
+    .project-link:link, .project-link:visited {
+
+    margin: 2.1875em 3.125em 0 0;
+  
+}
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        max-width: 40.625rem;
+        padding: 0 3.125rem;
+    }
+    .break {
+        display: inline;
+    }
+    .card {
+    padding: 2.5rem;
+
+}
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        padding-top: 4.25rem;
+    }
+    nav {
+        margin-top: 5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
 }
