@@ -5,15 +5,14 @@ GENERAL CSS
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
 html {
     font-size: 15px;
     color: #15354C;
-    background-color: #f8f8f8;
-    
+    background-color: #F8F8F8;
 }
 
 body {
@@ -31,12 +30,11 @@ body {
 
 main {
     padding-top: 3rem;
-
 }
 
 
 /*---------------------------------------------------------------------------
-TYPOGRAPHY & BUTTONS
+TYPOGRAPHY / HEADINGS
 ---------------------------------------------------------------------------*/
 
 h1 {
@@ -48,26 +46,31 @@ h1 {
     text-transform: uppercase;
 }
 
-.btn:link, .btn:visited {
-    display: inline-block;
-    padding: .625rem .9375rem;
-    font-weight: 700;
-    text-decoration: none;
-    border: .0625rem solid #15354c;
-    border-radius: .3125rem;
-    color: #15354c;
-    margin-right: .9375rem;
-    transition: all .2s ease-in-out;
-    margin: 2.35rem 0;
-}
-
-.btn:hover, .btn:active {
-    color: #4BA8FF;
-    border: .0625rem solid #4BA8FF;
-}
-
 .break {
     display: block;
+}
+
+
+/*---------------------------------------------------------------------------
+CARDS
+---------------------------------------------------------------------------*/
+
+.card {
+    padding: 1.25rem;
+    border: .0625rem solid #F2F2F2;
+    background: #FFF;
+    margin-bottom: 1.875rem;
+    -webkit-box-shadow: 0px 0px .125rem 0px rgba(0, 0, 0, 0.12), 0px .125rem .125rem 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px .125rem 0px rgba(0, 0, 0, 0.12), 0px .125rem .125rem 0px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    -webkit-transform: translateY(-.625rem);
+    transform: translateY(-.625rem);
+    -webkit-box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
 }
 
 
@@ -90,16 +93,17 @@ nav {
 }
 
 #site-navigation a {
-    color: #15354c;
+    color: #15354C;
     text-decoration: none;
     padding-bottom: .1875rem;
     border-bottom: .125rem solid transparent;
+    -webkit-transition: border 0.2s linear;
     transition: border 0.2s linear;
     font-weight: 700;
 }
 
 #site-navigation a:hover {
-    border-bottom: .125rem solid #15354c;
+    border-bottom: .125rem solid #15354C;
     cursor: pointer;
 }
 
@@ -129,30 +133,21 @@ PROJECTS SECTION
     padding-bottom: .875rem;
 }
 
-.project:first-of-type {
-    padding: 0;
-}
-
-.project {
-    padding: 1.5625rem 0 0 0;
-    border-bottom: 1px solid #E3E2EF;
-}
-
 .project-link:link, .project-link:visited {
     display: inline-block;
     margin: 1.1875em 3.125em 0 0;
-/*    margin: 2.1875em 3.125em 0 0;*/
     font-weight: 700;
-    color: #15354c;
+    color: #15354C;
     text-decoration: none;
     padding-bottom: .2em;
     border-bottom: .125rem solid transparent;
+    -webkit-transition: border 0.2s linear;
     transition: border 0.2s linear;
     font-size: .9375rem;
 }
 
 .project-link:hover, .project-link:active {
-    border-bottom: .125rem solid #15354c;
+    border-bottom: .125rem solid #15354C;
 }
 
 
@@ -163,7 +158,6 @@ CONNECT SECTION
 #connect-section ul {
     padding: 3rem 0 0 0;
     font-size: 2rem;
-/*    font-size: 2.5rem;*/
     text-align: center;
 }
 
@@ -181,117 +175,15 @@ CONNECT SECTION
 }
 
 #connect-section ul li i {
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 #connect-section ul li i:hover {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
     color: #4BA8FF;
     cursor: pointer;
-}
-
-
-/*---CONNECT FORM---*/
-
-.form-connect {
-    margin: 0 0 2.625rem 0;
-}
-
-::-webkit-input-placeholder {
-    /* Chrome */
-    color: #15354C;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
-    font-weight: 700;
-    font-size: .875rem;
-}
-
-:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #15354C;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
-    font-weight: 700;
-    font-size: .875rem;
-}
-
-::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #15354C;
-    opacity: 1;
-    color: #15354C;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
-    font-weight: 700;
-    font-size: .875rem;
-}
-
-:-moz-placeholder {
-    /* Firefox 4 - 18 */
-    color: #15354C;
-    opacity: 1;
-    color: #15354C;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
-    font-weight: 700;
-    font-size: .875rem;
-}
-
-.form-connect input[type="text"], .form-connect input[type="email"], .form-connect textarea, .form-connect select {
-    outline: none;
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 1rem;
-    border: .0625em solid #15354C;
-    padding: .625rem;
-}
-
-.form-connect input[type="text"]:focus, .form-connect input[type="email"]:focus, .form-connect textarea:focus, .form-connect select:focus {
-    box-shadow: 0 0 .3125em #4BA8FF;
-    padding: .625rem;
-    border: .0625em solid #4BA8FF;
-}
-
-input[type=submit] {
-    padding: .625rem .9375rem;
-    text-decoration: none;
-    border: .0625rem solid #15354c;
-    border-radius: .3125rem;
-    color: #15354c;
-    margin-right: .9375rem;
-    margin: 1.35rem 0 0 0;
-    cursor: pointer;
-    background-color: #fff;
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
-    font-size: .875rem;
-    font-weight: 700;
-}
-
-input[type=submit]:hover {
-    color: #4BA8FF;
-    border: .0625rem solid #4BA8FF;
-}
-
-
-
-/*---------------------------------------------------------------------------
-CARDS
----------------------------------------------------------------------------*/
-
-.card {
-    padding: 1.25rem;
-/*    padding: 2.5rem;*/
-    border: .0625rem solid #f2f2f2;
-    background: #FFF;
-    margin-bottom: 1.875rem;
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
-    transition: all 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-.625rem);
-    box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
 }
 
 
@@ -301,13 +193,11 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 360px) {
     #connect-section ul {
-    font-size: 2.5rem;
-}
+        font-size: 2.5rem;
+    }
     .project-link:link, .project-link:visited {
-
-    margin: 2.1875em 3.125em 0 0;
-  
-}
+        margin: 2.1875em 3.125em 0 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -319,9 +209,8 @@ MEDIA QUERIES
         display: inline;
     }
     .card {
-    padding: 2.5rem;
-
-}
+        padding: 2.5rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -331,9 +220,4 @@ MEDIA QUERIES
     nav {
         margin-top: 5rem;
     }
-
-}
-
-@media only screen and (min-width: 1920px) {
-
 }
