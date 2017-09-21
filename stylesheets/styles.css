@@ -6,17 +6,22 @@ GENERAL CSS
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
     font-size: 15px;
     color: #15354C;
+    background-color: #f8f8f8;
+    
 }
 
 body {
-    font-family: 'Fira Sans', sans-serif;
-    letter-spacing: .125rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .0625rem;
     font-weight: 400;
+    line-height: 1.625rem;
+    overflow-y: scroll;
 }
 
 .row {
@@ -26,6 +31,7 @@ body {
 
 main {
     padding-top: 3rem;
+
 }
 
 
@@ -34,8 +40,12 @@ TYPOGRAPHY & BUTTONS
 ---------------------------------------------------------------------------*/
 
 h1 {
-    font-size: 1.875rem;
-    font-weight: 700;
+    font-size: 1.625rem;
+    letter-spacing: .1725rem;
+    line-height: 2.625rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .btn:link, .btn:visited {
@@ -63,6 +73,7 @@ NAVIGATION SECTION
 
 nav {
     margin-top: 2.35rem;
+    text-align: center;
 }
 
 #site-navigation li {
@@ -70,17 +81,22 @@ nav {
     margin-right: 1.5625rem;
 }
 
+#site-navigation li:last-of-type {
+    margin-right: 0;
+}
+
 #site-navigation a {
-    color: #4BA8FF;
+    color: #777;
     text-decoration: none;
-    font-weight: 700;
     padding-bottom: .1875rem;
     border-bottom: .125rem solid transparent;
     transition: border 0.2s linear;
+    font-weight: 600;
 }
 
 #site-navigation a:hover {
-    border-bottom: .125rem solid #4BA8FF;
+    border-bottom: .125rem solid #15354c;
+    cursor: pointer;
 }
 
 
@@ -91,7 +107,7 @@ INTRO SECTION
 #intro-section h2 {
     font-weight: 700;
     font-size: 1rem;
-    padding-top: 2.1875rem;
+    padding-bottom: .875rem;
 }
 
 
@@ -106,6 +122,7 @@ PROJECTS SECTION
 #projects-section h2 {
     font-weight: 700;
     font-size: 1rem;
+    padding-bottom: .875rem;
 }
 
 .project:first-of-type {
@@ -119,9 +136,9 @@ PROJECTS SECTION
 
 .project-link:link, .project-link:visited {
     display: inline-block;
-    margin: 2.1875em 3.125em 2.1875em 0;
+    margin: 2.1875em 3.125em 0 0;
     font-weight: 700;
-    color: #4BA8FF;
+    color: #15354c;
     text-decoration: none;
     padding-bottom: .2em;
     border-bottom: .125rem solid transparent;
@@ -130,7 +147,7 @@ PROJECTS SECTION
 }
 
 .project-link:hover, .project-link:active {
-    border-bottom: .125rem solid #4BA8FF;
+    border-bottom: .125rem solid #15354c;
 }
 
 
@@ -139,8 +156,9 @@ CONNECT SECTION
 ---------------------------------------------------------------------------*/
 
 #connect-section ul {
-    padding: 1rem 0 0 0;
+    padding: 3rem 0 0 0;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 #connect-section ul li {
@@ -157,12 +175,13 @@ CONNECT SECTION
 }
 
 #connect-section ul li i {
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #connect-section ul li i:hover {
     transform: scale(1.2);
     color: #4BA8FF;
+    cursor: pointer;
 }
 
 
@@ -255,7 +274,7 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 360px) {
     html {
-        font-size: 16px;
+        /*        font-size: 16px;*/
     }
 }
 
@@ -280,8 +299,25 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 1920px) {
     html {
-        font-size: 17px;
+        /*        font-size: 17px;*/
     }
 }
 
 
+/*---------------------------------------------------------------------------
+CARDS
+---------------------------------------------------------------------------*/
+
+.card {
+    padding: 2.5rem;
+    border: .0625rem solid #f2f2f2;
+    background: #FFF;
+    margin-bottom: 1.875rem;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-.625rem);
+    box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
+}
