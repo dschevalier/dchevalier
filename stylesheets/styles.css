@@ -12,7 +12,7 @@ GENERAL CSS
 html {
     font-size: 15px;
     color: #15354C;
-    background-color: #F8F8F8;
+    background-color: #efefef;
 }
 
 body {
@@ -44,6 +44,7 @@ h1 {
     margin-bottom: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    background-color: rgba(202, 235, 242, 0.4);
 }
 
 .break {
@@ -60,17 +61,20 @@ CARDS
     border: .0625rem solid #F2F2F2;
     background: #FFF;
     margin-bottom: 1.875rem;
-    -webkit-box-shadow: 0px 0px .125rem 0px rgba(0, 0, 0, 0.12), 0px .125rem .125rem 0px rgba(0, 0, 0, 0.24);
-    box-shadow: 0px 0px .125rem 0px rgba(0, 0, 0, 0.12), 0px .125rem .125rem 0px rgba(0, 0, 0, 0.24);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border-radius: .125rem;
 }
 
 .card:hover {
     -webkit-transform: translateY(-.625rem);
     transform: translateY(-.625rem);
-    -webkit-box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1.375rem 2.6875rem rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -103,7 +107,7 @@ nav {
 }
 
 #site-navigation a:hover {
-    border-bottom: .125rem solid #15354C;
+    border-bottom: .125rem solid #FF3B3F;
     cursor: pointer;
 }
 
@@ -147,7 +151,7 @@ PROJECTS SECTION
 }
 
 .project-link:hover, .project-link:active {
-    border-bottom: .125rem solid #15354C;
+    border-bottom: .125rem solid #FF3B3F;
 }
 
 
@@ -182,7 +186,7 @@ CONNECT SECTION
 #connect-section ul li i:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    color: #4BA8FF;
+    color: #FF3B3F;
     cursor: pointer;
 }
 
