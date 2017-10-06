@@ -44,7 +44,7 @@ h1 {
     margin-bottom: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: rgba(202, 235, 242, 0.4);
+    background-color: rgba(202, 235, 242, 0.7);
 }
 
 .break {
@@ -63,20 +63,10 @@ CARDS
     margin-bottom: 1.875rem;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    -webkit-box-shadow: 0 .0625rem .1875rem rgba(0, 0, 0, 0.12), 0 .0625rem .125rem rgba(0, 0, 0, 0.24);
+    box-shadow: 0 .0625rem .1875rem rgba(0, 0, 0, 0.12), 0 .0625rem .125rem rgba(0, 0, 0, 0.24);
     border-radius: .125rem;
 }
-
-.card:hover {
-    -webkit-transform: translateY(-.625rem);
-    transform: translateY(-.625rem);
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 
 /*---------------------------------------------------------------------------
 NAVIGATION SECTION
@@ -137,7 +127,8 @@ PROJECTS SECTION
     padding-bottom: .875rem;
 }
 
-.project-link:link, .project-link:visited {
+.project-link:link,
+.project-link:visited {
     display: inline-block;
     margin: 1.1875em 3.125em 0 0;
     font-weight: 700;
@@ -150,7 +141,8 @@ PROJECTS SECTION
     font-size: .9375rem;
 }
 
-.project-link:hover, .project-link:active {
+.project-link:hover,
+.project-link:active {
     border-bottom: .125rem solid #FF3B3F;
 }
 
@@ -199,7 +191,8 @@ MEDIA QUERIES
     #connect-section ul {
         font-size: 2.5rem;
     }
-    .project-link:link, .project-link:visited {
+    .project-link:link,
+    .project-link:visited {
         margin: 2.1875em 3.125em 0 0;
     }
 }
