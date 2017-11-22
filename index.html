@@ -3,20 +3,20 @@
 
 <head>
 
-    <!---REQUIRED META TAGS--->
+    <!--META TAGS-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="David Chevalier, Massachusetts">
     <meta name="description" content="| David Chevalier | Massachusetts |">
 
-    <!--OUTSIDE CSS-->
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link rel="stylesheet" href="stylesheets/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!--WORKING CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">    
 
-    <!--INSIDE CSS-->
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--TITLE-->
     <title>David Chevalier</title>
@@ -35,34 +35,40 @@
 
 <body>
 
-    <nav>
-        <div class="row">
-            <h1>Hello, I'm <span class="break">David Chevalier</span></h1>
-            <ul id="site-navigation">
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="connect.html">Connect</a></li>
-            </ul>
-        </div>
-    </nav>
+<!--NAVIGATION-->
+<div class="navigation">
+    <div class="row">
+        <h1>Hello, I'm
+            <span class="inline-break">David Chevalier</span>
+        </h1>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+    </div>
+</div>
 
-    <main id="intro-section">
-        <div class="row">
-            <div class="card fadeInUp">
-                <h2>Brief Introduction</h2>
-                <p>I am in search of a cool job title away from previous professional career. To help with this search I’m currently working on my own side-projects to acquire new skills and explore approaches to real-world problems.</p><br>
-                <p>When I am not working on these projects I could be found chasing after star wars toys, watching movies, reading the news or probably trying to organize something.</p>
-            </div>
-            <div class="card fadeInUp">
-                <h2>What I’ve Been Learning and Using</h2>
-                <p>HTML5, CSS3, Responsive Design, Media queries, Normalize, Grid systems, Github, Bootstrap 3, Sketch, Brackets, Atom, Pixelmator, JQuery effects, Web fonts and icons, Favicons, Image optimization, W3C markup validation, A lot of patience</p>
-            </div>
-            <div class="card fadeInUp">
-                <h2>My Next Learning Steps</h2>
-                <p>Getting better with design, SASS and SCSS, Foundation, Accessibility best practices and guidelines, Wordpress, Material Design, Form Handling, Adobe Creative Suite, Bootstrap 4, Javascript, and Good SEO</p>
-            </div>
+<!--INTRO-->
+<section class="intro">
+    <div class="row">
+        <div class="card fadeInUp">
+            <h2>Brief Introduction</h2>
+            <p>I am in search of a cool job title away from previous professional career. To help with this search I’m currently working on my own side-projects to acquire new skills and explore approaches to real-world problems.</p><br>
+            <p>When I am not working on these projects I could be found chasing after star wars toys, reading the news or probably trying to organize something.</p>
         </div>
-    </main>
+        <div class="card fadeInUp">
+            <h2>What I’ve Been Learning and Using</h2>
+            <p>HTML5, CSS3, Mobile and responsive design, Media queries, Normalize, Grid systems, Github, Sass / SCSS, Bootstrap 3, Sketch,
+            NPM, JQuery effects, Visual Studio Code, Brackets, Atom, Pixelmator, Web fonts and icons, Favicons, Image optimization, W3C
+            markup validation, A lot of patience</p>
+        </div>
+        <div class="card fadeInUp">
+            <h2>My Next Learning Steps</h2>
+            <p>Getting better with design, Invision, Foundation, Bootstrap 4, CSS Grid, Flexbox, Accessibility best practices and guidelines, WordPress, Good SEO, Material Design, Adobe Creative Suite</p>
+        </div>
+    </div>
+</section>
 
 </body>
 

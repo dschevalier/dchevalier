@@ -1,0 +1,140 @@
+/*---------------------------------------------------------------------------
+BASE CSS
+---------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  color: #15354C;
+  background-color: #efefef; }
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-y: scroll; }
+
+.row {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 56rem; }
+
+main {
+  padding-top: 4.5rem; }
+
+/*---------------------------------------------------------------------------
+TYPOGRAPHY / HEADINGS
+---------------------------------------------------------------------------*/
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(202, 235, 242, 0.7); }
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px; }
+
+.break {
+  display: inline-block; }
+
+p {
+  font-size: 1.5rem; }
+
+/*---------------------------------------------------------------------------
+CARD 
+---------------------------------------------------------------------------*/
+.card {
+  padding: 3.75rem;
+  border: 1px solid #F2F2F2;
+  background: #fff;
+  margin-bottom: 3rem;
+  animation-duration: 1s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px; }
+
+/*---------------------------------------------------------------------------
+NAVIGATION SECTION
+---------------------------------------------------------------------------*/
+nav {
+  margin-top: 7rem;
+  text-align: center;
+  font-size: 15px; }
+
+#site-navigation li {
+  display: inline;
+  margin-right: 2.5rem; }
+
+#site-navigation li:last-of-type {
+  margin-right: 0; }
+
+#site-navigation a {
+  color: #15354C;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s linear;
+  font-weight: 700; }
+
+#site-navigation a:hover {
+  border-bottom: 2px solid #FF3B3F;
+  cursor: pointer; }
+
+/*---------------------------------------------------------------------------
+INTRO SECTION
+---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
+PROJECTS SECTION
+---------------------------------------------------------------------------*/
+.project-link:link,
+.project-link:visited {
+  display: inline-block;
+  margin: 3rem 3rem 0 0;
+  font-weight: 700;
+  color: #15354C;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s linear;
+  font-size: 1.4rem; }
+
+.project-link:hover,
+.project-link:active {
+  border-bottom: 2px solid #FF3B3F; }
+
+/*---------------------------------------------------------------------------
+CONNECT SECTION
+---------------------------------------------------------------------------*/
+#connect-section ul {
+  padding: 3rem 0 0 0;
+  font-size: 2rem;
+  text-align: center; }
+
+#connect-section ul li {
+  display: inline;
+  padding-right: 2rem;
+  font-size: 3.7rem; }
+
+#connect-section ul li a {
+  color: #15354C; }
+
+#connect-section ul li:last-child {
+  padding-right: 0; }
+
+#connect-section ul li i {
+  transition: all .3s ease-in-out; }
+
+#connect-section ul li i:hover {
+  transform: scale(1.2);
+  color: #FF3B3F;
+  cursor: pointer; }
+
+/*---------------------------------------------------------------------------
+MEDIA QUERIES
+---------------------------------------------------------------------------*/
