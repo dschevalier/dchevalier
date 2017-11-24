@@ -1,10 +1,23 @@
 // COLOR VARIABLES
 $text-color:#15354C;
-$background-color:#efefef;
-$heading-background-color:rgba(202, 235, 242, 0.7);
+$background-color:#F0F1F5;
+$heading-background-color:#caebf2;
 $card-border-color:#F2F2F2;
 $card-background-color:#fff;
 $link-border-bottom:#FF3B3F;
+// MIXINS
+@mixin responsive($breakpoint) {
+    @if $breakpoint==small {
+        @media (min-width: 20em) {@content};
+    }
+    @if $breakpoint==medium {
+        @media (min-width: 48em) {@content};
+        ;
+    }
+    @if $breakpoint==large {
+        @media (min-width: 120em) {@content};
+    }
+}
 
 /*---------------------------------------------------------------------------
 BASE
@@ -17,9 +30,12 @@ BASE
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     color: $text-color;
     background-color: $background-color;
+    @include responsive(large) {
+        font-size: 70%; 
+    }
 }
 
 body {
@@ -46,13 +62,16 @@ section {
 }
 
 .card {
-    padding: 3.8rem 4rem 4rem 4rem;
+    padding: 1.8rem;
     border: 1px solid $card-border-color;
     background: $card-background-color;
     margin-bottom: 3rem;
     animation-duration: 1s;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 5px;
+    @include responsive(medium) {
+        padding: 3.8rem 4rem 4rem 4rem;
+    }
 }
 
 
@@ -67,6 +86,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     background-color: $heading-background-color;
+    border-radius: 5px;
 }
 
 h2 {
@@ -84,7 +104,10 @@ UTILITIES
 ---------------------------------------------------------------------------*/
 
 .inline-break {
-    display: inline-block;
+    display: block;
+    @include responsive(medium) {
+        display: inline-block;
+    }
 }
 
 
@@ -93,7 +116,7 @@ NAVIGATION
 ---------------------------------------------------------------------------*/
 
 .navigation {
-    margin-top: 7rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
     li {
@@ -117,6 +140,9 @@ NAVIGATION
     a:active {
         border-bottom: 2px solid $link-border-bottom;
     }
+    @include responsive(medium) {
+        margin-top: 7rem;
+    }
 }
 
 
@@ -127,10 +153,14 @@ PROJECTS
 .projects {
     font-size: 1.4rem;
     li {
-        display: inline-block;
+        display: block;
         margin: 2rem 3rem 0 0;
         &:last-of-type {
             margin-right: 0;
+        }
+        @include responsive(medium) {
+            display: inline-block;
+            margin: 3rem 3rem 0 0;
         }
     }
     a:link,
@@ -157,7 +187,7 @@ CONNECT
 .connect {
     ul {
         font-size: 3.6rem;
-        text-align: center;
+        text-align: center;        
     }
     li {
         display: inline-block;
@@ -176,38 +206,3 @@ CONNECT
         color: $link-border-bottom;
     }
 }
-
-
-
-// /*---------------------------------------------------------------------------
-// MEDIA QUERIES
-// ---------------------------------------------------------------------------*/
-// // @media only screen and (min-width: 360px) {
-// //     #connect-section ul {
-// //         font-size: 2.5rem;
-// //     }
-// //     .project-link:link,
-// //     .project-link:visited {
-// //         margin: 2.1875em 3.125em 0 0;
-// //     }
-// // }
-// // @media only screen and (min-width: 768px) {
-// //     .row {
-// //         max-width: 60rem;
-// //         padding: 0 5rem;
-// //     }
-// //     .break {
-// //         display: inline;
-// //     }
-// //     .card {
-// //         padding: 2.5rem;
-// //     }
-// // }
-// // @media only screen and (min-width: 992px) {
-// //     main {
-// //         padding-top: 4.25rem;
-// //     }
-// //     nav {
-// //         margin-top: 5rem;
-// //     }
-// // }
