@@ -1,0 +1,208 @@
+// COLOR VARIABLES
+$text-color:#15354C;
+$background-color:#F0F1F5;
+$heading-background-color:#caebf2;
+$card-border-color:#F2F2F2;
+$card-background-color:#fff;
+$link-border-bottom:#FF3B3F;
+// MIXINS
+@mixin responsive($breakpoint) {
+    @if $breakpoint==small {
+        @media (min-width: 20em) {@content};
+    }
+    @if $breakpoint==medium {
+        @media (min-width: 48em) {@content};
+        ;
+    }
+    @if $breakpoint==large {
+        @media (min-width: 120em) {@content};
+    }
+}
+
+/*---------------------------------------------------------------------------
+BASE
+---------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: $text-color;
+    background-color: $background-color;
+    @include responsive(large) {
+        font-size: 70%; 
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.7;
+    overflow-y: scroll;
+}
+
+
+/*---------------------------------------------------------------------------
+REUSABLE LAYOUT
+---------------------------------------------------------------------------*/
+
+section {
+    padding-top: 4.5rem;
+}
+
+.row {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 55rem;
+}
+
+.card {
+    padding: 1.8rem;
+    border: 1px solid $card-border-color;
+    background: $card-background-color;
+    margin-bottom: 3rem;
+    animation-duration: 1s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    @include responsive(medium) {
+        padding: 3.8rem 4rem 4rem 4rem;
+    }
+}
+
+
+/*---------------------------------------------------------------------------
+TYPOGRAPHY / HEADINGS
+---------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $heading-background-color;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/*---------------------------------------------------------------------------
+UTILITIES
+---------------------------------------------------------------------------*/
+
+.inline-break {
+    display: block;
+    @include responsive(medium) {
+        display: inline-block;
+    }
+}
+
+
+/*---------------------------------------------------------------------------
+NAVIGATION 
+---------------------------------------------------------------------------*/
+
+.navigation {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    li {
+        display: inline-block;
+        margin-right: 2.5rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    a:link,
+    a:visited {
+        color: $text-color;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 2px solid transparent;
+        transition: border 0.2s linear;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    a:hover,
+    a:active {
+        border-bottom: 2px solid $link-border-bottom;
+    }
+    @include responsive(medium) {
+        margin-top: 7rem;
+    }
+}
+
+
+/*---------------------------------------------------------------------------
+PROJECTS
+---------------------------------------------------------------------------*/
+
+.projects {
+    font-size: 1.4rem;
+    li {
+        display: block;
+        margin: 2rem 3rem 0 0;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        @include responsive(medium) {
+            display: inline-block;
+            margin: 3rem 3rem 0 0;
+        }
+    }
+    a:link,
+    a:visited {
+        color: $text-color;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 2px solid transparent;
+        transition: border 0.2s linear;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    a:hover,
+    a:active {
+        border-bottom: 2px solid $link-border-bottom;
+    }
+}
+
+
+/*---------------------------------------------------------------------------
+CONNECT
+---------------------------------------------------------------------------*/
+
+.connect {
+    ul {
+        font-size: 3.6rem;
+        text-align: center;        
+    }
+    li {
+        display: inline-block;
+        margin: 3rem 2rem 0 0;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    i {
+        color: $text-color;
+        cursor: pointer;
+        transition: all .3s linear;
+    }
+    i:hover {
+        transform: scale(1.2);
+        color: $link-border-bottom;
+    }
+}

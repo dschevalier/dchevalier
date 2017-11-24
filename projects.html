@@ -3,20 +3,20 @@
 
 <head>
 
-    <!---REQUIRED META TAGS--->
+    <!--META TAGS-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="David Chevalier, Massachusetts">
     <meta name="description" content="| David Chevalier | Massachusetts |">
 
-    <!--OUTSIDE CSS-->
-    <link rel="stylesheet" href="stylesheets/normalize.css">
-    <link rel="stylesheet" href="stylesheets/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!--WORKING CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">    
 
-    <!--INSIDE CSS-->
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--TITLE-->
     <title>David Chevalier</title>
@@ -35,33 +35,43 @@
 
 <body>
 
-    <nav>
-        <div class="row">
-            <h1>Selected <span class="break">Projects</span></h1>
-            <ul id="site-navigation">
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="connect.html">Connect</a></li>
-            </ul>
-        </div>
-    </nav>
+<!--NAVIGATION-->
+<div class="navigation">
+    <div class="row">
+        <h1>Selected <span class="inline-break">Projects</span></h1>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+    </div>
+</div>
 
-    <main id="projects-section">
-        <div class="row">
-            <div class="card fadeInUp">
-                <h2>Alfred’s Sweets &#38; Treats</h2>
-                <p>A single page responsive website for a fictional bakery named Alfred’s. The site was developed with HTML5, CSS3, JQuery and JavaScript. There are simple CSS animations and hovers sprinkled throughout to help build a more engaging experience.</p>
-                <a href="http://alfreds.dchevalier.io/" target="_blank" class="project-link">View Project</a>
-                <a href="https://github.com/dschevalier/Alfreds" target="_blank" class="project-link">View Code</a>
-            </div>
-            <div class="card fadeInUp">
-                <h2>Archimedes Capital</h2>
-                <p>A multipage page responsive website for a fictional wealth management firm named Archimedes Capital. The site was developed with bootstrap 3.3.7 as an introduction on using a front-end framework. Built mobile first it features many of bootstrap’s components such as modals, buttons, forms and navbar. </p>
-                <a href="http://archimedes.dchevalier.io/" target="_blank" class="project-link">View Project</a>
-                <a href="https://github.com/dschevalier/Archimedes" target="_blank" class="project-link">View Code</a>
-            </div>
+<!--PROJECTS-->
+<section class="projects">
+    <div class="row">
+        <div class="card fadeInUp">
+            <h2>Alfred’s Sweets &#38; Treats</h2>
+            <p>A single page responsive website for a fictional bakery named Alfred’s. The site was developed with HTML5, CSS3,
+                JQuery and JavaScript. There are simple CSS animations and hovers sprinkled throughout to help build a more engaging
+                experience.</p>
+                <ul>
+                    <li><a href="http://alfreds.dchevalier.io/" target="_blank">View Project</a></li>
+                    <li><a href="https://github.com/dschevalier/Alfreds" target="_blank">View Code</a></li>
+                </ul>       
         </div>
-    </main>
+        <div class="card fadeInUp">
+            <h2>Archimedes Capital</h2>
+            <p>A multipage page responsive website for a fictional wealth management firm named Archimedes Capital. The site was
+                developed with bootstrap 3 as an introduction on using a front-end framework. Built mobile first it features
+                many of bootstrap’s components such as modals, buttons, and navbar. </p>
+                <ul>
+                    <li><a href="http://archimedes.dchevalier.io/" target="_blank" class="projects-link">View Project</a></li>
+                    <li><a href="https://github.com/dschevalier/Archimedes" target="_blank" class="projects-link">View Code</a></li>
+                </ul>         
+         </div>
+    </div>
+</section>
 
     <!-- STATCOUNTER CODE FOR BASIC INTRO/START TO ANALYTICS-->
     <script type="text/javascript">

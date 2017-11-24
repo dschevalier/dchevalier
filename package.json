@@ -1,0 +1,33 @@
+{
+  "name": "dchevalier",
+  "version": "1.0.0",
+  "description": "dchevalier projects site",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/styles.scss css/styles.css -w",
+    "server": "live-server",
+    "working": "npm-run-all --parallel server watch",
+    "compile": "node-sass sass/styles.scss css/styles.compile.css",
+    "concat": "concat -o css/styles.concat.css css/animate.css css/font-awesome.css css/normalize.css css/styles.compile.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/styles.concat.css -o css/styles.prefix.css",
+    "compress": "node-sass css/styles.prefix.css css/styles.css --output-style compressed",
+    "build": "npm-run-all compile concat prefix compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschevalier/dchevalier.git"
+  },
+  "author": "david chevalier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dschevalier/dchevalier/issues"
+  },
+  "homepage": "https://github.com/dschevalier/dchevalier#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "concat": "^1.0.3",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
+  }
+}

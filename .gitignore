@@ -5,3 +5,4 @@
 
 # exclude working files
 /working_files
+/node_modules
