@@ -44,7 +44,7 @@ REUSABLES
 ---------------------------------------------------------------------------*/
 .btn:link, .btn:visited {
   display: inline-block;
-  padding: 5px 1rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   border-radius: 2px;
   color: #FFF;
@@ -53,7 +53,7 @@ REUSABLES
   font-size: 1.5rem; }
   @media (min-width: 22.5em) {
     .btn:link, .btn:visited {
-      padding: 1rem 2rem; } }
+      padding: .5rem 1.5rem; } }
 
 .btn:hover, .btn:active {
   background-color: #FFF; }
@@ -155,7 +155,7 @@ SELECTED PROJECTS
     margin: 2rem 3rem 0 0; }
     .projects li:last-of-type {
       margin-right: 0; }
-    @media (min-width: 48em) {
+    @media (min-width: 22.5em) {
       .projects li {
         display: inline-block;
         margin: 3rem 3rem 0 0; } }
