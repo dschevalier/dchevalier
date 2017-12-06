@@ -1,21 +1,25 @@
 // COLOR VARIABLES
-$text-color:#15354C;
-$background-color:#F0F1F5;
-$heading-background-color:#caebf2;
-$card-border-color:#F2F2F2;
-$card-background-color:#fff;
-$link-border-bottom:#FF3B3F;
+$background-color:#F6F6F6;
+$white-color:#FFF;
+$blue-color:#3F51B5;
+$link-color:#FF3B3F;
+$heading-background-color:#1CB2A5;
+$paragraph-text-color:#646464;
+
+// FONT VARIABLES
+$font-1:'Roboto',sans-serif;
+$font-2:'Raleway',sans-serif;
+
 // MIXINS
 @mixin responsive($breakpoint) {
     @if $breakpoint==small {
-        @media (min-width: 20em) {@content};
+        @media (min-width: 22.5em) {@content};
     }
     @if $breakpoint==medium {
         @media (min-width: 48em) {@content};
-        ;
     }
     @if $breakpoint==large {
-        @media (min-width: 120em) {@content};
+        @media (min-width: 80em) {@content};
     }
 }
 
@@ -31,71 +35,116 @@ BASE
 
 html {
     font-size: 62.5%;
-    color: $text-color;
     background-color: $background-color;
-    @include responsive(large) {
-        font-size: 70%; 
     }
-}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
+    font-family: $font-1;
     font-weight: 400;
-    line-height: 1.7;
+    letter-spacing: 1px;    
+    line-height: 1.8;
     overflow-y: scroll;
 }
-
 
 /*---------------------------------------------------------------------------
 REUSABLE LAYOUT
 ---------------------------------------------------------------------------*/
 
 section {
-    padding-top: 4.5rem;
+    margin-top: -13rem;
 }
 
 .row {
     margin: 0 auto;
     padding: 0 2rem;
-    max-width: 55rem;
+    max-width: 60rem;
 }
 
 .card {
-    padding: 1.8rem;
-    border: 1px solid $card-border-color;
-    background: $card-background-color;
+    background: $white-color;
+    padding: 1.8rem;    
     margin-bottom: 3rem;
     animation-duration: 1s;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 2px;
     @include responsive(medium) {
-        padding: 3.8rem 4rem 4rem 4rem;
+        padding: 4rem;
     }
 }
 
+/*---------------------------------------------------------------------------
+REUSABLES
+---------------------------------------------------------------------------*/
+
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 5px 1rem;   
+        text-decoration: none;
+        border-radius: 2px;
+        color: $white-color;
+        transition: background-color 0.3s, border 0.3s, color 0.3s;
+        font-weight: 400;
+        font-size: 1.5rem;
+        @include responsive(small) {
+            padding: 1rem 2rem;
+        }
+    }
+    &:hover,
+    &:active {
+        background-color: $white-color
+    }
+    &-ghost:link,
+    &-ghost:visited {
+        border: 1px solid $blue-color;
+        color: $blue-color;
+    }
+    &-ghost:hover,
+    &-ghost:active {
+        border: 1px solid $link-color;
+        color: $link-color;
+    }
+}
 
 /*---------------------------------------------------------------------------
 TYPOGRAPHY / HEADINGS
 ---------------------------------------------------------------------------*/
 
 h1 {
-    font-size: 2.4rem;
+    font-family: $font-2;
+    font-weight: 300;
+    font-size: 2.5rem;
     letter-spacing: 3px;
-    margin-bottom: 3rem;
-    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 3rem;    
     text-transform: uppercase;
     background-color: $heading-background-color;
-    border-radius: 5px;
+    color: $white-color;
+    border-radius: 2px;
+    @include responsive(medium) {
+        margin-bottom: 5rem;
+    }
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-family: $font-2;
+    font-size: 1.8rem;   
+    color: $blue-color;
+    font-weight: 400;
     margin-bottom: 5px;
+    @include responsive(small) {
+        font-size: 2rem;
+    }
 }
 
 p {
     font-size: 1.5rem;
+    color: $paragraph-text-color;
+    font-weight: 300;
+    @include responsive(small) {
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -110,15 +159,22 @@ UTILITIES
     }
 }
 
-
 /*---------------------------------------------------------------------------
 NAVIGATION 
 ---------------------------------------------------------------------------*/
 
 .navigation {
-    margin-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
+    background-color: $blue-color;    
+    font-family:$font-2;
+    padding: 2rem 0 18rem 0;
+    @include responsive(medium) {
+        font-size: 1.7rem;
+    }
+    @include responsive(large) {
+        padding: 6rem 0 20rem 0;
+    }
     li {
         display: inline-block;
         margin-right: 2.5rem;
@@ -127,27 +183,25 @@ NAVIGATION
         }
     }
     a:link,
-    a:visited {
-        color: $text-color;
+    a:visited {       
         text-decoration: none;
         padding-bottom: 3px;
         border-bottom: 2px solid transparent;
-        transition: border 0.2s linear;
-        font-weight: 700;
+        transition: border 0.3s linear;
+        font-weight: 400;        
+        color: $white-color;
         cursor: pointer;
+        text-transform: uppercase;
     }
     a:hover,
     a:active {
-        border-bottom: 2px solid $link-border-bottom;
-    }
-    @include responsive(medium) {
-        margin-top: 7rem;
-    }
+        border-bottom: 2px solid $link-color;
+    }    
 }
 
 
 /*---------------------------------------------------------------------------
-PROJECTS
+SELECTED PROJECTS
 ---------------------------------------------------------------------------*/
 
 .projects {
@@ -163,31 +217,19 @@ PROJECTS
             margin: 3rem 3rem 0 0;
         }
     }
-    a:link,
-    a:visited {
-        color: $text-color;
-        text-decoration: none;
-        padding-bottom: 3px;
-        border-bottom: 2px solid transparent;
-        transition: border 0.2s linear;
-        font-weight: 700;
-        cursor: pointer;
-    }
-    a:hover,
-    a:active {
-        border-bottom: 2px solid $link-border-bottom;
-    }
 }
 
-
 /*---------------------------------------------------------------------------
-CONNECT
+LET'S CONNECT
 ---------------------------------------------------------------------------*/
 
 .connect {
     ul {
-        font-size: 3.6rem;
-        text-align: center;        
+        font-size: 3.2rem;
+        text-align: center;
+        @include responsive(small) {
+            font-size: 4.2rem;
+        }
     }
     li {
         display: inline-block;
@@ -197,12 +239,12 @@ CONNECT
         }
     }
     i {
-        color: $text-color;
+        color: $blue-color;
         cursor: pointer;
         transition: all .3s linear;
     }
     i:hover {
         transform: scale(1.2);
-        color: $link-border-bottom;
+        color: $link-color;
     }
 }
