@@ -36,11 +36,11 @@ section {
   padding: 2rem;
   margin-bottom: 3rem;
   animation-duration: 1s;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 2px; }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; }
   @media (min-width: 48em) {
     .card {
-      padding: 4rem; } }
+      padding: 3rem 3.7rem 3.7rem 3.7rem; } }
 
 /*---------------------------------------------------------------------------
 REUSABLES
@@ -51,12 +51,12 @@ REUSABLES
   text-decoration: none;
   border-radius: 2px;
   color: #FFF;
-  transition: background-color 0.3s, border 0.3s, color 0.3s;
-  font-weight: 400;
+  transition: all .3s;
+  font-weight: 500;
   font-size: 1.5rem; }
   @media (min-width: 22.5em) {
     .btn:link, .btn:visited {
-      padding: .5rem 1.5rem; } }
+      padding: .5rem 1.6rem; } }
 
 .btn:hover, .btn:active {
   background-color: #FFF; }
@@ -82,7 +82,7 @@ h1 {
   text-transform: uppercase;
   background-color: #1CB2A5;
   color: #FFF;
-  border-radius: 2px; }
+  border-radius: 5px; }
   @media (min-width: 48em) {
     h1 {
       margin-bottom: 5rem; } }
@@ -91,7 +91,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   color: #3F51B5;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 5px; }
   @media (min-width: 22.5em) {
     h2 {
@@ -99,7 +99,7 @@ h2 {
 
 p {
   font-size: 1.5rem;
-  color: #646464;
+  color: #111;
   font-weight: 300; }
   @media (min-width: 22.5em) {
     p {
@@ -128,7 +128,7 @@ NAVIGATION
       font-size: 1.7rem; } }
   @media (min-width: 80em) {
     .navigation {
-      padding: 6rem 0 20rem 0; } }
+      padding: 6rem 0 18rem 0; } }
   .navigation li {
     display: inline-block;
     margin-right: 2.5rem; }
@@ -137,7 +137,7 @@ NAVIGATION
   .navigation a:link,
   .navigation a:visited {
     text-decoration: none;
-    padding-bottom: 3px;
+    padding-bottom: 7px;
     border-bottom: 2px solid transparent;
     transition: border 0.3s linear;
     font-weight: 400;
@@ -146,7 +146,7 @@ NAVIGATION
     text-transform: uppercase; }
   .navigation a:hover,
   .navigation a:active {
-    border-bottom: 2px solid #FF3B3F; }
+    border-bottom: 2px solid #fff; }
 
 /*---------------------------------------------------------------------------
 SELECTED PROJECTS
