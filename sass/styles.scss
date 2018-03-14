@@ -4,22 +4,31 @@ $white-color:#FFF;
 $blue-color:#3F51B5;
 $link-color:#FF3B3F;
 $heading-background-color:#1CB2A5;
-$paragraph-text-color:#646464;
-
+$paragraph-text-color:#111;
 // FONT VARIABLES
-$font-1:'Roboto',sans-serif;
-$font-2:'Raleway',sans-serif;
-
+$font-1:'Roboto',
+sans-serif;
+$font-2:'Raleway',
+sans-serif;
 // MIXINS
 @mixin responsive($breakpoint) {
     @if $breakpoint==small {
-        @media (min-width: 22.5em) {@content};
+        @media (min-width: 22.5em) {
+            @content
+        }
+        ;
     }
     @if $breakpoint==medium {
-        @media (min-width: 48em) {@content};
+        @media (min-width: 48em) {
+            @content
+        }
+        ;
     }
     @if $breakpoint==large {
-        @media (min-width: 80em) {@content};
+        @media (min-width: 80em) {
+            @content
+        }
+        ;
     }
 }
 
@@ -39,12 +48,12 @@ html {
     @include responsive(medium) {
         font-size: 62.5%;
     }
-    }
+}
 
 body {
     font-family: $font-1;
     font-weight: 400;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
     line-height: 1.8;
     overflow-y: scroll;
 }
@@ -65,13 +74,13 @@ section {
 
 .card {
     background: $white-color;
-    padding: 2rem;    
+    padding: 2rem;
     margin-bottom: 3rem;
     animation-duration: 1s;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.10);
-    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20), 0 1px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
     @include responsive(medium) {
-        padding: 4rem;
+        padding: 3rem 3.7rem 3.7rem 3.7rem;
     }
 }
 
@@ -83,15 +92,15 @@ REUSABLES
     &:link,
     &:visited {
         display: inline-block;
-        padding: .5rem 1rem;   
+        padding: .5rem 1rem;
         text-decoration: none;
         border-radius: 2px;
         color: $white-color;
-        transition: background-color 0.3s, border 0.3s, color 0.3s;
-        font-weight: 400;
+        transition: all .3s;
+        font-weight: 500;
         font-size: 1.5rem;
         @include responsive(small) {
-            padding: .5rem 1.5rem;
+            padding: .5rem 1.6rem;
         }
     }
     &:hover,
@@ -120,11 +129,11 @@ h1 {
     font-size: 2.5rem;
     letter-spacing: 3px;
     padding: 5px;
-    margin: 2rem 0 3rem 0;    
+    margin: 2rem 0 3rem 0;
     text-transform: uppercase;
     background-color: $heading-background-color;
     color: $white-color;
-    border-radius: 2px;
+    border-radius: 5px;
     @include responsive(medium) {
         margin-bottom: 5rem;
     }
@@ -132,9 +141,9 @@ h1 {
 
 h2 {
     font-family: $font-2;
-    font-size: 1.8rem;   
+    font-size: 1.8rem;
     color: $blue-color;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 5px;
     @include responsive(small) {
         font-size: 2rem;
@@ -149,7 +158,6 @@ p {
         font-size: 1.6rem;
     }
 }
-
 
 /*---------------------------------------------------------------------------
 UTILITIES
@@ -169,14 +177,14 @@ NAVIGATION
 .navigation {
     text-align: center;
     font-size: 1.5rem;
-    background-color: $blue-color;    
-    font-family:$font-2;
+    background-color: $blue-color;
+    font-family: $font-2;
     padding: 2rem 0 18rem 0;
     @include responsive(medium) {
         font-size: 1.7rem;
     }
     @include responsive(large) {
-        padding: 6rem 0 20rem 0;
+        padding: 6rem 0 18rem 0;
     }
     li {
         display: inline-block;
@@ -186,22 +194,21 @@ NAVIGATION
         }
     }
     a:link,
-    a:visited {       
+    a:visited {
         text-decoration: none;
-        padding-bottom: 3px;
+        padding-bottom: 7px;
         border-bottom: 2px solid transparent;
         transition: border 0.3s linear;
-        font-weight: 400;        
+        font-weight: 400;
         color: $white-color;
         cursor: pointer;
         text-transform: uppercase;
     }
     a:hover,
     a:active {
-        border-bottom: 2px solid $link-color;
-    }    
+        border-bottom: 2px solid #fff;
+    }
 }
-
 
 /*---------------------------------------------------------------------------
 SELECTED PROJECTS
