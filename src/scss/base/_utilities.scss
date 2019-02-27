@@ -1,0 +1,15 @@
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 2rem;
+
+    @include respond(sm) {
+        margin-bottom: 3rem;
+    }
+
+    @include respond(md) {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,111 @@
+// HOW I CAN HELP SECTION
+.helpful {
+    padding: 4rem 0;
+
+    @include respond(sm) {
+        padding: 5rem 0;
+    }
+
+    @include respond(md) {
+        padding: 8rem 0;
+    }
+
+    @include respond(lg) {
+        padding: 10rem 0 14rem 0;
+    }
+
+    img {
+        height: 5rem;
+        width: auto;
+
+
+        @include respond(sm) {
+            height: 6rem;
+        }
+
+        @include respond(md) {
+            height: 7rem;
+        }
+    }
+
+    &-service {
+        margin: 2rem .5rem 1rem .5rem;
+
+        @include respond(sm) {
+            margin: 4rem .5rem 0 .5rem;
+        }
+
+        @include respond(xl) {
+            margin: 5rem 4rem 0 4rem;
+        }
+
+    }
+}
+
+// ABOUT ME SECTION
+.about {
+    padding: 4rem 0;
+
+    @include respond(sm) {
+        padding: 5rem 0;
+    }
+
+    @include respond(md) {
+        padding: 6rem 0 7rem 0;
+    }
+
+    @include respond(lg) {
+        padding: 7.5rem 0;
+    }
+
+    img {
+        border: 1px solid rgba($jumbo, 0.2);
+        box-shadow: 1px 1px 5px $mercury;
+        margin: 2rem 0;
+
+        @include respond(md) {
+            padding: 0;
+        }
+    }
+}
+
+// PORTFOLIO SECTION
+.portfolio {
+    padding: 4rem 0 7rem 0;
+
+    @include respond(sm) {
+        padding: 5rem 0 8rem 0;
+    }
+
+    @include respond(md) {
+        padding: 10rem 0 14rem 0;
+    }
+
+    p {
+        line-height: 1.6;
+
+        @include respond(md) {
+            line-height: 1.4;
+        }
+    }
+
+}
+
+// CALL TO ACTION PREFOOTER SECTION
+.cta {
+    padding: 4rem 0 2.5rem 0;
+    background-color: $mountain-meadow;
+    background-image: linear-gradient(to top, $mountain-meadow, $eastern-blue);
+
+    @include respond(sm) {
+        padding: 5rem 0 3rem 0;
+    }
+
+    @include respond(md) {
+        padding: 7.5rem 0 6rem 0;
+    }
+
+    h1 {
+        color: $white;
+    }
+}

@@ -1,0 +1,81 @@
+#top-nav {
+    padding: 1.5rem;
+
+    @include respond(lg) {
+        padding: 3rem 0 0 0;
+    }
+
+    @include respond(xl) {
+        padding: 4rem 0 0 0;
+    }
+
+    // NAVBAR LOGO
+    .navbar {
+        &-brand {
+            font-size: 2rem;
+            font-family: $font-sans;
+            color: $shark;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0;
+
+            @include respond(sm) {
+                font-size: 2.4rem;
+            }
+
+            @include respond(md) {
+                font-size: 2.8rem;
+            }
+
+            @include respond(md) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    // NAVBAR MENU LINKS
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-size: 1.7rem;
+                font-family: $font-sans;
+                color: $shark;
+                font-weight: 500;
+                padding: .6rem 0;
+
+                @include respond(sm) {
+                    font-size: 1.8rem;
+                }
+
+                @include respond(lg) {
+                    padding: 0 1.2rem;
+                }
+
+                &.active,
+                &:hover {
+                    color: $mountain-meadow;
+                    transition: all .3s linear;
+                }
+            }
+        }
+    }
+}
+
+
+// MOBILE NAVBAR ICON
+
+.navbar-toggler {
+
+    @include respond(sm) {
+        font-size: 2rem;
+    }
+
+    @include respond(md) {
+        font-size: 2.4rem;
+    }
+
+    &.active,
+    &:hover {
+        transition: all .2s linear;
+    }
+}
