@@ -1,0 +1,45 @@
+//  MEDIA QUERIES 
+@mixin respond($breakpoint) {
+
+    // <400px (25*16)  
+    @if $breakpoint==xs {
+        @media only screen and (max-width: 25em) {
+            @content
+        };
+    }
+
+    // 400px to 767px (25*16)  
+    @if $breakpoint==sm {
+        @media only screen and (min-width: 25em) {
+            @content
+        };
+    }
+
+    //  768px to 991px (48x16)
+    @if $breakpoint==md {
+        @media only screen and (min-width: 48em) {
+            @content
+        };
+    }
+
+    // 992px to 1199px (62*16)
+    @if $breakpoint==lg {
+        @media only screen and (min-width: 62em) {
+            @content
+        };
+    }
+
+    // 1200px to 1919px (75*16)
+    @if $breakpoint==xl {
+        @media only screen and (min-width: 75em) {
+            @content
+        };
+    }
+
+    // 1920px and larger (120*16)
+    @if $breakpoint==xl-plus {
+        @media only screen and (min-width: 120em) {
+            @content
+        };
+    }
+}

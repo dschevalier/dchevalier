@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+}
+
+::selection {
+    background-color: $eastern-blue;
+    color: $white;
+}
+
+html {
+    height: 100%;
+    font-size: 60%;
+
+    @include respond(md) {
+        font-size: 62.5%;
+    }
+
+    @include respond(xl-plus) {
+        font-size: 67%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: $athens-gray;
+
+}
+
+.container {
+    @include respond(xl-plus) {
+        max-width: 130rem;
+    }
+}
+
+.page-container {
+    background-color: $white;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond(md) {
+        width: 90%;
+    }
+}
