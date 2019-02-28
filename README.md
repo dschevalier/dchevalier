@@ -1,3 +1,5 @@
-# dchevalier.io site
+## dchevalier.io
 
-A simple responsive site intended for projects I am currently developing. The site also has a brief introduction along with sections of what I am currently using and learning. 
+[dchevalier.io](https://dchevalier.io)
+
+A project site intended to gather personal projects and give a brief introduction to myself. 
