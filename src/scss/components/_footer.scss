@@ -1,0 +1,23 @@
+.footer {
+    padding: 5rem 0;
+    text-align: center;
+
+    @include respond(md) {
+        padding: 10rem 0 5rem 0;
+    }
+}
+
+.footer-links {
+    list-style-type: none;
+    display: inline-block;
+
+    li {
+        display: inline;
+        margin: 0 1rem;
+
+        @include respond(lg) {
+            margin: 0 1.5rem;
+        }
+
+    }
+}

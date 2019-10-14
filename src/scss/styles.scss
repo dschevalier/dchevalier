@@ -1,0 +1,23 @@
+// GOOGLE FONTS IMPORT
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,700|Space+Mono:400,700&display=swap" rel="stylesheet';
+
+// VENDORS IMPORTS
+@import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/aos/aos.scss";
+
+// BASE IMPORTS
+@import "base/variables";
+@import "base/responsive";
+@import "base/utilities";
+@import "base/typography";
+@import "base/main";
+
+// COMPONENT IMPORTS
+@import "components/footer";
+@import "components/portfolio-item";
+@import "components/hero";
+@import "components/navigation";
+
+// PAGE SPECIFIC IMPORTS
+@import "page-specific/about";
+@import "page-specific/projects";

@@ -1,0 +1,16 @@
+.hero {
+    padding: 14rem 1rem;
+
+    @include respond(sm) {
+        padding: 16rem 1rem;
+    }
+
+    @include respond(md) {
+        padding: 22rem 0 25rem 0;
+    }
+
+    &-text {
+        max-width: 70rem;
+    }
+
+}

@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    background-color: $snow-white;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $darkness;
+    }
+
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background-color: $dark-slate;
+    color: $light-link;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-slate;
+        color: $dark-link;
+    }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    img {
+        opacity: .75;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+}

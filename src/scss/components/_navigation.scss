@@ -1,0 +1,99 @@
+#top-nav {
+    padding: 2rem;
+
+    @include respond(md) {
+        padding: 3rem 0;
+    }
+
+    @include respond(xl) {
+        padding: 5rem 0;
+    }
+
+    // NAVBAR BRAND
+    .navbar {
+        &-brand {
+            font-family: $font-primary;
+            font-size: 4.2rem;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 4.2rem;
+            color: $dark-slate;
+
+            @include respond(md) {
+                font-size: 5rem;
+                line-height: 5rem;
+                letter-spacing: -4px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                color: $light-slate;
+            }
+        }
+    }
+
+    // NAVBAR MENU LINKS
+    .navbar-nav {
+        .nav-item {
+            &:first-child {
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+
+                @include respond(sm) {
+                    margin-left: 4rem;
+                    margin-right: 2.5rem;
+                }
+
+                @include respond(md) {
+                    margin-left: 6rem;
+                }
+            }
+
+            .nav-link {
+                font-family: $font-secondary;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: $dark-slate;
+                margin: 1px 0 0 0;
+                padding: 5px;
+
+                @include respond(sm) {
+                    font-size: 1.7rem;
+                    line-height: 1.7rem;
+                    margin: 3px 0 0 0;
+                }
+
+                @include respond(xl) {
+                    margin: 1.7rem 0 0 0;
+                }
+
+                @media (prefers-color-scheme: dark) {
+                    color: $light-slate;
+                }
+
+                &.active {
+                    color: $light-slate;
+                    background-color: $dark-slate;
+
+
+                    @media (prefers-color-scheme: dark) {
+                        background-color: $dark-slate;
+                    }
+
+                }
+
+                &:hover {
+                    color: $light-slate;
+                    background-color: $dark-slate;
+                    transition: all 300ms ease-in-out;
+
+                    @media (prefers-color-scheme: dark) {
+                        color: $light-slate;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
