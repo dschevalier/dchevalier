@@ -7321,14 +7321,14 @@ h3 {
 p {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  line-height: 2.6rem;
+  line-height: 2.8rem;
   color: #242426;
   font-weight: 400;
   letter-spacing: 0; }
   @media only screen and (min-width: 48em) {
     p {
       font-size: 1.8rem;
-      line-height: 3rem; } }
+      line-height: 3.2rem; } }
   @media (prefers-color-scheme: dark) {
     p {
       color: #EBEBF0; } }
@@ -7417,7 +7417,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   img {
-    opacity: .75;
+    opacity: .9;
     transition: opacity 300ms ease-in-out; }
   img:hover {
     opacity: 1; } }

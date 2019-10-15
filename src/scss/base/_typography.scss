@@ -57,14 +57,14 @@ h3 {
 p {
     font-family: $font-primary;
     font-size: 1.6rem;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     color: $dark-slate;
     font-weight: 400;
     letter-spacing: 0;
 
     @include respond(md) {
         font-size: 1.8rem;
-        line-height: 3rem;
+        line-height: 3.2rem;
     }
 
     @media (prefers-color-scheme: dark) {
