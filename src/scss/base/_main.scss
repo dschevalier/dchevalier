@@ -23,6 +23,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+// HIGHLIGHTING SELECTION COLORS
 ::selection {
     background-color: $dark-slate;
     color: $light-link;
@@ -34,7 +36,7 @@ body {
 }
 
 
-
+// IMAGE OPACITY REDUCTION FOR DARK MODE
 @media (prefers-color-scheme: dark) {
     img {
         opacity: .9;
