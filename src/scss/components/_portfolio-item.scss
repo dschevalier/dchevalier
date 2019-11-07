@@ -13,8 +13,8 @@
 
     &:hover {
       img {
-        -webkit-clip-path: inset(1rem);
-        clip-path: inset(1rem);
+        -webkit-clip-path: inset(.5rem);
+        clip-path: inset(.5rem);
       }
     }
   }
