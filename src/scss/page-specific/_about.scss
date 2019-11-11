@@ -1,0 +1,28 @@
+.about {
+    padding: 3rem 0;
+
+    &-lists {
+        list-style-type: none;
+        font-family: $font-primary;
+        color: $dark-slate;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+
+        @include respond(md) {
+            font-size: 1.8rem;
+            line-height: 3rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: $light-slate;
+        }
+    }
+
+    .link {
+        margin: .5rem 0;
+    }
+
+
+}

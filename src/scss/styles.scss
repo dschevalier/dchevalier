@@ -1,11 +1,7 @@
 // GOOGLE FONTS IMPORT
-@import 'https://fonts.googleapis.com/css?family=Barlow:400,500,800)';
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,700|Space+Mono:400,700&display=swap" rel="stylesheet';
 
 // VENDORS IMPORTS
-@import "vendors/fontawesome/brands.scss";
-@import "vendors/fontawesome/solid.scss";
-@import "vendors/fontawesome/regular.scss";
-@import "vendors/fontawesome/fontawesome.scss";
 @import "vendors/bootstrap/bootstrap.scss";
 @import "vendors/aos/aos.scss";
 
@@ -17,11 +13,11 @@
 @import "base/main";
 
 // COMPONENT IMPORTS
-@import "components/buttons";
 @import "components/footer";
+@import "components/portfolio-item";
 @import "components/hero";
 @import "components/navigation";
-@import "components/portfolio";
 
 // PAGE SPECIFIC IMPORTS
-@import "page-specific/home-page";
+@import "page-specific/about";
+@import "page-specific/projects";

@@ -1,34 +1,32 @@
 #top-nav {
-    padding: 1.5rem;
+    padding: 2rem;
 
-    @include respond(lg) {
-        padding: 3rem 0 0 0;
+    @include respond(md) {
+        padding: 3rem 0;
     }
 
     @include respond(xl) {
-        padding: 4rem 0 0 0;
+        padding: 5rem 0;
     }
 
-    // NAVBAR LOGO
+    // NAVBAR BRANDING (NAME)
     .navbar {
         &-brand {
-            font-size: 2rem;
-            font-family: $font-sans;
-            color: $shark;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0;
-
-            @include respond(sm) {
-                font-size: 2.4rem;
-            }
+            font-family: $font-primary;
+            font-size: 4.2rem;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 4.2rem;
+            color: $dark-slate;
 
             @include respond(md) {
-                font-size: 2.8rem;
+                font-size: 5rem;
+                line-height: 5rem;
+                letter-spacing: -4px;
             }
 
-            @include respond(md) {
-                font-size: 3rem;
+            @media (prefers-color-scheme: dark) {
+                color: $light-slate;
             }
         }
     }
@@ -36,46 +34,66 @@
     // NAVBAR MENU LINKS
     .navbar-nav {
         .nav-item {
-            .nav-link {
-                font-size: 1.7rem;
-                font-family: $font-sans;
-                color: $shark;
-                font-weight: 500;
-                padding: .6rem 0;
+            &:first-child {
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
 
                 @include respond(sm) {
-                    font-size: 1.8rem;
+                    margin-left: 4rem;
+                    margin-right: 2.5rem;
                 }
 
-                @include respond(lg) {
-                    padding: 0 1.2rem;
+                @include respond(md) {
+                    margin-left: 6rem;
+                }
+            }
+
+            .nav-link {
+                font-family: $font-secondary;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: $dark-slate;
+                margin: 1px 0 0 0;
+                padding: 5px;
+
+                @include respond(sm) {
+                    font-size: 1.7rem;
+                    line-height: 1.7rem;
+                    margin: 3px 0 0 0;
                 }
 
-                &.active,
+                @include respond(xl) {
+                    margin: 1.7rem 0 0 0;
+                }
+
+                @media (prefers-color-scheme: dark) {
+                    color: $light-slate;
+                }
+
+                &.active {
+                    color: $light-slate;
+                    background-color: $dark-slate;
+
+
+                    @media (prefers-color-scheme: dark) {
+                        background-color: $dark-slate;
+                    }
+
+                }
+
                 &:hover {
-                    color: $mountain-meadow;
-                    transition: all .3s linear;
+                    color: $light-slate;
+                    background-color: $dark-slate;
+                    transition: all 300ms ease-in-out;
+
+                    @media (prefers-color-scheme: dark) {
+                        color: $light-slate;
+                    }
                 }
             }
         }
     }
-}
 
 
-// MOBILE NAVBAR ICON
-
-.navbar-toggler {
-
-    @include respond(sm) {
-        font-size: 2rem;
-    }
-
-    @include respond(md) {
-        font-size: 2.4rem;
-    }
-
-    &.active,
-    &:hover {
-        transition: all .2s linear;
-    }
 }

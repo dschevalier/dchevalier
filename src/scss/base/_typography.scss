@@ -1,78 +1,138 @@
 h1 {
-    font-size: 2.7rem;
-    letter-spacing: 1px;
-    font-family: $font-sans;
-    color: $shark;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-
-    @include respond(sm) {
-        font-size: 3rem;
-    }
+    font-family: $font-primary;
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+    font-weight: 700;
+    color: $dark-slate;
+    letter-spacing: -1px;
 
     @include respond(md) {
-        font-size: 3.6rem;
+        font-size: 3.8rem;
+        line-height: 3.8rem;
+    }
+
+    @include respond(lg) {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: $light-slate;
     }
 }
 
 h2 {
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    font-family: $font-sans;
-    color: $eastern-blue;
-    font-weight: 500;
-    padding: 1.5rem 0 1rem 0;
-
-    @include respond(sm) {
-        font-size: 2.6rem;
-        padding: 1.5rem 0;
-    }
+    font-family: $font-primary;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: $dark-slate;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
 
     @include respond(md) {
-        font-size: 2.7rem;
-        padding: 1.5rem 0;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1.2rem;
     }
 
+    @media (prefers-color-scheme: dark) {
+        color: $light-slate;
+    }
 }
 
 h3 {
-    font-size: 1.6rem;
-    font-family: $font-sans;
-    color: $shark;
-    font-weight: 500;
-    padding: 2rem 0 .5rem 0;
+    font-family: $font-primary;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: $dark-slate;
+    letter-spacing: -1px;
 
-    @include respond(sm) {
-        font-size: 1.8rem;
+    @media (prefers-color-scheme: dark) {
+        color: $light-slate;
     }
 }
 
 p {
+    font-family: $font-primary;
     font-size: 1.6rem;
-    font-family: $font-sans;
-    color: $scarpa-flow;
-    line-height: 1.6;
+    line-height: 2.8rem;
+    color: $dark-slate;
     font-weight: 400;
     letter-spacing: 0;
+
+    @include respond(md) {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: $light-slate;
+    }
+}
+
+
+.link {
+    color: $snow-white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    padding: .2rem 1rem;
+    background-color: $light-link;
+    margin: 1rem 0;
+    display: inline-block;
+
+    &:hover {
+        color: $dark-slate;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+        text-decoration: none;
+
+        @media (prefers-color-scheme: dark) {
+            color: $light-slate;
+        }
+    }
 
     @include respond(sm) {
         font-size: 1.7rem;
     }
 
-    @include respond(md) {
-        font-size: 1.8rem;
+    @media (prefers-color-scheme: dark) {
+        color: $dark-slate;
+        background-color: $dark-link;
     }
 }
 
-a {
-    color: $mountain-meadow;
+.inline-link {
+    color: $snow-white;
     text-decoration: none;
-    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    padding: .5rem;
+    background-color: $light-link;
+    display: inline-block;
 
     &:hover {
-        color: $mountain-meadow;
+        color: $dark-slate;
         cursor: pointer;
-        transition: all .3s ease-in-out;
+        transition: all 300ms ease-in-out;
         text-decoration: none;
+
+        @media (prefers-color-scheme: dark) {
+            color: $light-slate;
+        }
+    }
+
+    @include respond(sm) {
+        font-size: 1.7rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: $dark-slate;
+        background-color: $dark-link;
     }
 }
