@@ -9,6 +9,7 @@
       -webkit-transition: -webkit-clip-path 300ms ease-out;
       -webkit-clip-path: inset(-1px);
       clip-path: inset(-1px);
+      -moz-transition: clip-path 300ms ease-out;
     }
 
     &:hover {
