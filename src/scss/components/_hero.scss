@@ -1,16 +1,16 @@
 .hero {
-    padding: 14rem 1rem;
+    padding: 10rem 1rem 12rem 1rem;
 
     @include respond(sm) {
-        padding: 16rem 1rem;
+        padding: 12rem 1rem 14rem 1rem;
     }
 
     @include respond(md) {
-        padding: 22rem 0 25rem 0;
-    }
+        padding: 17.5rem 0 22rem 0;
 
-    &-text {
-        max-width: 67rem;
+        .container {
+            padding: 0;
+        }
     }
 
 }

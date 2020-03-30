@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="550px" viewBox="0 0 800 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="800" height="550"></rect>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Rectangle" fill="#BAE8E8" xlink:href="#path-1"></use>
+            <g id="Group-3" mask="url(#mask-2)" fill="#272343" fill-rule="nonzero">
+                <g transform="translate(218.000000, 94.000000)">
+                    <path d="M89.3964035,462 C67.4705731,392.820085 39.8236273,343.804619 2.39028867,307.748724 L0,305.445288 L1.91813102,302.721624 C73.5496217,201.017894 132.657829,101.520064 177.601345,6.99470738 L180.928584,0 L184.373862,6.93470226 C241.774218,122.47403 300.218497,219.193877 363.048667,302.623933 L365,305.216216 L362.801634,307.592833 C317.297421,356.750859 287.806001,407.212556 272.645321,461.864739 L265.371147,459.778773 C280.627732,404.794565 309.993747,354.038413 355.106937,304.707785 C293.980954,223.159209 236.990053,129.046589 181.072573,17.3019127 C136.770889,109.2948 79.2376105,205.860907 9.96335746,304.488317 C47.1494743,341.232582 74.7227257,390.647608 96.5895553,459.643704 L89.3964035,462 Z" id="Path"></path>
+                    <rect id="Rectangle" x="177" y="8" width="8" height="298"></rect>
+                    <rect id="Rectangle" x="177" y="104" width="8" height="298"></rect>
+                    <circle id="Oval" cx="181" cy="317" r="19"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

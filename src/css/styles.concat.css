@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Poppins:400,700|Space+Mono:400,700&display=swap" rel="stylesheet';
+@import 'https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet';
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7272,118 +7272,135 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
       margin-bottom: 12.5rem; } }
 
 h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3.4rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.2rem;
   line-height: 3.4rem;
   font-weight: 700;
-  color: #242426;
-  letter-spacing: -1px; }
-  @media only screen and (min-width: 48em) {
+  color: #111111;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem; }
+  @media only screen and (min-width: 25em) {
     h1 {
-      font-size: 3.8rem;
-      line-height: 3.8rem; } }
-  @media only screen and (min-width: 62em) {
-    h1 {
-      font-size: 4.2rem;
+      font-size: 4rem;
       line-height: 4.2rem; } }
-  @media (prefers-color-scheme: dark) {
-    h1 {
-      color: #EBEBF0; } }
 
 h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.6rem;
-  line-height: 2.6rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
   font-weight: 700;
-  color: #242426;
+  color: #111111;
   letter-spacing: -1px;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 25em) {
     h2 {
-      font-size: 3rem;
-      line-height: 3rem;
-      margin-bottom: 1.2rem; } }
-  @media (prefers-color-scheme: dark) {
-    h2 {
-      color: #EBEBF0; } }
+      font-size: 2.7rem;
+      line-height: 3rem; } }
 
 h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   font-weight: 700;
-  color: #242426;
-  letter-spacing: -1px; }
-  @media (prefers-color-scheme: dark) {
+  color: #111111;
+  margin-bottom: .5rem; }
+  @media only screen and (min-width: 25em) {
     h3 {
-      color: #EBEBF0; } }
+      font-size: 2.2rem;
+      line-height: 3rem;
+      letter-spacing: -1px; } }
 
 p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
   line-height: 2.8rem;
-  color: #242426;
+  color: #111111;
   font-weight: 400;
   letter-spacing: 0; }
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 25em) {
     p {
       font-size: 1.8rem;
-      line-height: 3.2rem; } }
-  @media (prefers-color-scheme: dark) {
-    p {
-      color: #EBEBF0; } }
+      line-height: 3rem; } }
 
-.link {
-  color: #FFFFFF;
-  text-decoration: none;
+.link-highlight {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap; }
+
+.link-highlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #08ffc8;
+  width: 100%;
+  height: 3px;
+  bottom: 0px;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.694, 0, 0.335, 1);
+  pointer-events: none; }
+
+.link-highlight:hover:before {
+  transform: scaleX(0);
+  transform-origin: right center; }
+
+.button-link {
+  font-family: "Rubik", sans-serif;
   font-size: 1.7rem;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  padding: .2rem 1rem;
-  background-color: #39BFA4;
-  margin: 1rem 0;
-  display: inline-block; }
-  .link:hover {
-    color: #242426;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-    text-decoration: none; }
-    @media (prefers-color-scheme: dark) {
-      .link:hover {
-        color: #EBEBF0; } }
+  line-height: 2.8rem;
+  color: #111111;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 2rem 1rem 0; }
   @media only screen and (min-width: 25em) {
-    .link {
-      font-size: 1.7rem; } }
-  @media (prefers-color-scheme: dark) {
-    .link {
-      color: #242426;
-      background-color: #00b38f; } }
+    .button-link {
+      font-size: 1.8rem;
+      line-height: 3rem; } }
+  .button-link:hover {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    color: #111111;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0;
+    text-decoration: none; }
+    @media only screen and (min-width: 25em) {
+      .button-link:hover {
+        font-size: 1.8rem;
+        line-height: 3rem; } }
 
 .inline-link {
-  color: #FFFFFF;
-  text-decoration: none;
+  font-family: "Rubik", sans-serif;
   font-size: 1.7rem;
-  line-height: 1.5rem;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  padding: .5rem;
-  background-color: #39BFA4;
+  line-height: 2.8rem;
+  color: #111111;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0;
+  text-decoration: none;
   display: inline-block; }
-  .inline-link:hover {
-    color: #242426;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-    text-decoration: none; }
-    @media (prefers-color-scheme: dark) {
-      .inline-link:hover {
-        color: #EBEBF0; } }
   @media only screen and (min-width: 25em) {
     .inline-link {
-      font-size: 1.7rem; } }
-  @media (prefers-color-scheme: dark) {
-    .inline-link {
-      color: #242426;
-      background-color: #00b38f; } }
+      font-size: 1.8rem;
+      line-height: 3rem; } }
+  .inline-link:hover {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    color: #111111;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0;
+    text-decoration: none; }
+    @media only screen and (min-width: 25em) {
+      .inline-link:hover {
+        font-size: 1.8rem;
+        line-height: 3rem; } }
 
 *,
 *::after,
@@ -7391,11 +7408,6 @@ p {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF; }
-  @media (prefers-color-scheme: dark) {
-    *,
-    *::after,
-    *::before {
-      background-color: #121212; } }
 
 html {
   height: 100%;
@@ -7407,152 +7419,109 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
+@media only screen and (min-width: 62em) {
+  .container {
+    max-width: 975px; } }
+
 ::selection {
-  background-color: #242426;
-  color: #39BFA4; }
-  @media (prefers-color-scheme: dark) {
-    ::selection {
-      background-color: #242426;
-      color: #00b38f; } }
-
-@media (prefers-color-scheme: dark) {
-  img {
-    opacity: .9;
-    transition: opacity 300ms ease-in-out; }
-  img:hover {
-    opacity: 1; } }
-
-.footer {
-  padding: 5rem 0;
-  text-align: center; }
-  @media only screen and (min-width: 48em) {
-    .footer {
-      padding: 10rem 0 5rem 0; } }
-
-.footer-links {
-  list-style-type: none;
-  display: inline-block; }
-  .footer-links li {
-    display: inline;
-    margin: 0 1rem; }
-    @media only screen and (min-width: 62em) {
-      .footer-links li {
-        margin: 0 1.5rem; } }
-
-.portfolio-item {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  margin: 1rem; }
-  @media only screen and (min-width: 62em) {
-    .portfolio-item img {
-      -webkit-transition: -webkit-clip-path 300ms ease-out;
-      -webkit-clip-path: inset(-1px);
-      clip-path: inset(-1px);
-      -moz-transition: clip-path 300ms ease-out; }
-    .portfolio-item:hover img {
-      -webkit-clip-path: inset(0.5rem);
-      clip-path: inset(0.5rem); } }
-
-.hero {
-  padding: 14rem 1rem; }
-  @media only screen and (min-width: 25em) {
-    .hero {
-      padding: 16rem 1rem; } }
-  @media only screen and (min-width: 48em) {
-    .hero {
-      padding: 22rem 0 25rem 0; } }
-  .hero-text {
-    max-width: 67rem; }
+  background-color: #08ffc8;
+  color: #111111; }
 
 #top-nav {
-  padding: 2rem; }
+  padding: 3rem 2rem 4rem 2rem; }
   @media only screen and (min-width: 48em) {
     #top-nav {
-      padding: 3rem 0; } }
+      padding: 3rem 2rem 4rem 2rem; } }
   @media only screen and (min-width: 75em) {
     #top-nav {
-      padding: 5rem 0; } }
+      padding: 5rem 0 8rem 0; } }
   #top-nav .navbar-brand {
-    font-family: "Poppins", sans-serif;
-    font-size: 4.2rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
     font-weight: 700;
-    letter-spacing: -3px;
-    line-height: 4.2rem;
-    color: #242426; }
-    @media only screen and (min-width: 48em) {
-      #top-nav .navbar-brand {
-        font-size: 5rem;
-        line-height: 5rem;
-        letter-spacing: -4px; } }
-    @media (prefers-color-scheme: dark) {
-      #top-nav .navbar-brand {
-        color: #EBEBF0; } }
-  #top-nav .navbar-nav .nav-item:first-child {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem; }
+    letter-spacing: -1px;
+    color: #111111;
+    padding: 0;
+    margin: 0; }
     @media only screen and (min-width: 25em) {
-      #top-nav .navbar-nav .nav-item:first-child {
-        margin-left: 4rem;
-        margin-right: 2.5rem; } }
-    @media only screen and (min-width: 48em) {
-      #top-nav .navbar-nav .nav-item:first-child {
-        margin-left: 6rem; } }
+      #top-nav .navbar-brand {
+        font-size: 2.6rem;
+        line-height: 3rem; } }
   #top-nav .navbar-nav .nav-item .nav-link {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6rem;
-    color: #242426;
-    margin: 1px 0 0 0;
-    padding: 5px; }
-    @media only screen and (min-width: 25em) {
+    color: #111111;
+    padding: .5rem 0;
+    margin: .6rem 0 0 2.5rem; }
+    @media only screen and (min-width: 48em) {
       #top-nav .navbar-nav .nav-item .nav-link {
-        font-size: 1.7rem;
-        line-height: 1.7rem;
-        margin: 3px 0 0 0; } }
+        margin: 1.4rem 0 0 3rem; } }
     @media only screen and (min-width: 75em) {
       #top-nav .navbar-nav .nav-item .nav-link {
-        margin: 1.7rem 0 0 0; } }
-    @media (prefers-color-scheme: dark) {
-      #top-nav .navbar-nav .nav-item .nav-link {
-        color: #EBEBF0; } }
-    #top-nav .navbar-nav .nav-item .nav-link.active {
-      color: #EBEBF0;
-      background-color: #242426; }
-      @media (prefers-color-scheme: dark) {
-        #top-nav .navbar-nav .nav-item .nav-link.active {
-          background-color: #242426; } }
-    #top-nav .navbar-nav .nav-item .nav-link:hover {
-      color: #EBEBF0;
-      background-color: #242426;
-      transition: all 300ms ease-in-out; }
-      @media (prefers-color-scheme: dark) {
-        #top-nav .navbar-nav .nav-item .nav-link:hover {
-          color: #EBEBF0; } }
+        margin: 1rem 0 0 3rem; } }
+
+.hero {
+  padding: 10rem 1rem 12rem 1rem; }
+  @media only screen and (min-width: 25em) {
+    .hero {
+      padding: 12rem 1rem 14rem 1rem; } }
+  @media only screen and (min-width: 48em) {
+    .hero {
+      padding: 17.5rem 0 22rem 0; }
+      .hero .container {
+        padding: 0; } }
+
+.footer {
+  padding: 0 1rem 3rem 1rem; }
+  @media only screen and (min-width: 48em) {
+    .footer .container {
+      padding: 0; } }
+
+.portfolio {
+  padding: 0 1rem; }
+  @media only screen and (min-width: 25em) {
+    .portfolio {
+      padding: 0 1rem 0 1rem; } }
+  @media only screen and (min-width: 48em) {
+    .portfolio .container {
+      padding: 0; } }
+  .portfolio-item {
+    position: relative;
+    overflow: hidden; }
+    @media only screen and (min-width: 62em) {
+      .portfolio-item img {
+        -webkit-transition: -webkit-clip-path 0.3s ease-out;
+        -webkit-clip-path: inset(-1px);
+        clip-path: inset(-1px);
+        -moz-transition: clip-path 0.3s ease-out; }
+      .portfolio-item:hover img {
+        -webkit-clip-path: inset(0.5rem);
+        clip-path: inset(0.5rem); } }
 
 .about {
-  padding: 3rem 0; }
-  .about-lists {
+  padding: 2rem 1rem; }
+  @media only screen and (min-width: 25em) {
+    .about {
+      padding: 2rem 1rem; } }
+  @media only screen and (min-width: 48em) {
+    .about {
+      padding: 0 0 0 0; }
+      .about .container {
+        padding: 0; } }
+  .about-list {
     list-style-type: none;
-    font-family: "Poppins", sans-serif;
-    color: #242426;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #111111;
     font-weight: 400;
-    letter-spacing: 0;
-    font-size: 1.6rem;
-    line-height: 2.6rem; }
-    @media only screen and (min-width: 48em) {
-      .about-lists {
-        font-size: 1.8rem;
-        line-height: 3rem; } }
-    @media (prefers-color-scheme: dark) {
-      .about-lists {
-        color: #EBEBF0; } }
-  .about .link {
-    margin: .5rem 0; }
+    letter-spacing: 0; }
 
-.autocloud,
-.archimedes,
-.empire,
-.greenspire {
-  padding: 3rem 0; }
+.design {
+  padding: 0 1rem; }
+  @media only screen and (min-width: 48em) {
+    .design .container {
+      padding: 0; } }

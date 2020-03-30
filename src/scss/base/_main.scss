@@ -3,12 +3,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    background-color: $snow-white;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $darkness;
-    }
-
+    background-color: $flat-white;
 }
 
 html {
@@ -23,27 +18,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+// LIMIT SIZE OF CONTAINER
+.container {
+    @include respond(lg) {
+        max-width: 975px;
+    }
+}
 
 // HIGHLIGHTING SELECTION COLORS
 ::selection {
-    background-color: $dark-slate;
-    color: $light-link;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $dark-slate;
-        color: $dark-link;
-    }
+    background-color: $link-color;
+    color: $primary-color;
 }
 
 
-// IMAGE OPACITY REDUCTION FOR DARK MODE
-@media (prefers-color-scheme: dark) {
-    img {
-        opacity: .9;
-        transition: opacity 300ms ease-in-out;
-    }
-
-    img:hover {
-        opacity: 1;
-    }
-}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650px" height="423px" viewBox="0 0 650 423" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22">
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#FFFFFF" x="0.5" y="323.5" width="199" height="99"></rect>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#FFFFFF" x="0.5" y="99.5" width="199" height="99"></rect>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#FFFFFF" x="225.5" y="100.5" width="199" height="99"></rect>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#FFFFFF" x="450.5" y="99.5" width="199" height="100"></rect>
+            <g id="Group-11" transform="translate(15.000000, 115.000000)" line-spacing="18">
+                <text id="#6C5CE7" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" fill="#121212">
+                    <tspan x="0" y="38">#6C5CE7</tspan>
+                </text>
+                <text id="rgba(108,92,231,1)" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" fill="#121212">
+                    <tspan x="0" y="61">rgba(108,92,231,1)</tspan>
+                </text>
+                <text id="Howe-Purple" font-family="Rubik-Bold, Rubik" font-size="18" font-weight="bold" fill="#242426">
+                    <tspan x="0" y="17">Howe Purple</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#6C5CE7" x="0.5" y="0.5" width="199" height="99"></rect>
+            <g id="Group-12" transform="translate(240.000000, 118.000000)" fill="#262626" line-spacing="18">
+                <text id="#A9A9E9" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal">
+                    <tspan x="0" y="38">#A9A9E9</tspan>
+                </text>
+                <text id="rgba(169,169,233,1)" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal">
+                    <tspan x="0" y="61">rgba(169,169,233,1)</tspan>
+                </text>
+                <text id="MacMillan-Purple" font-family="Rubik-Bold, Rubik" font-size="18" font-weight="bold">
+                    <tspan x="0" y="17">MacMillan Purple</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#A9A9E9" x="225.5" y="1.5" width="199" height="99"></rect>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#4B4D66" x="450.5" y="0.5" width="199" height="99"></rect>
+            <text id="#4B4D66" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" line-spacing="18" fill="#262626">
+                <tspan x="465" y="156">#4B4D66</tspan>
+            </text>
+            <text id="rgba(75,77,102,1)" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" line-spacing="18" fill="#262626">
+                <tspan x="465" y="179">rgba(75,77,102,1)</tspan>
+            </text>
+            <text id="Clark-Purple" font-family="Rubik-Bold, Rubik" font-size="18" font-weight="bold" line-spacing="18" fill="#262626">
+                <tspan x="465" y="135">Clark Purple</tspan>
+            </text>
+            <text id="#FFFFFF" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" line-spacing="18" fill="#262626">
+                <tspan x="15" y="379">#FFFFFF</tspan>
+            </text>
+            <text id="rgba(255,255,255,1)" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" line-spacing="18" fill="#262626">
+                <tspan x="15" y="402">rgba(255,255,255,1)</tspan>
+            </text>
+            <text id="Mutiny-White" font-family="Rubik-Bold, Rubik" font-size="17" font-weight="bold" line-spacing="18" fill="#262626">
+                <tspan x="15" y="357">Mutiny White</tspan>
+            </text>
+            <rect id="Rectangle" stroke-opacity="0.1" stroke="#111111" fill="#FFFFFF" x="0.5" y="224.5" width="199" height="99"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+.design {
+    padding: 0 1rem;
+    @include respond(md) {
+        .container {
+            padding: 0;
+        }
+    }
+
+}
